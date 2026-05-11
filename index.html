@@ -2,47 +2,322 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dogão da Tia</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/menu.js" defer></script>
 </head>
-
 <body>
-
-<header>
-    <nav class="navbar">
-
-        <i class="fa-solid fa-burger" id="nav-logo"> food </i>
-
-        <ul class="nav-list">
-            <li class="nav-item"><a href="">Home</a></li>
-            <li class="nav-item"><a href="">Cardápio</a></li>
-            <li class="nav-item"><a href="">Avaliações</a></li>
-        </ul>
-
-        <button class="btn-default">
-            Peça Aqui
+    <header>
+        <nav class="navbar">
+            <i class="fa-solid fa-burger" id="nav-logo">food</i>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Cardápio</a></li>
+                <li class="nav-item"><a href="">Avaliações</a></li>
+            </ul>
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+        </nav>
+        <button class="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
         </button>
-
-    </nav>
-
-    <button class="mobile-btn">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-
-    <div class="mobile-menu">
-        <ul class="mobile-nav-list">
-            <li class="nav-item"><a href="">Home</a></li>
-            <li class="nav-item"><a href="">Cardápio</a></li>
-            <li class="nav-item"><a href="">Avaliações</a></li>
-        </ul>
-    </div>
-
-</header>
-
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Cardápio</a></li>
+                <li class="nav-item"><a href="">Avaliações</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="content">
+        <section class="home" id="home">
+            <div class="cta">
+                <h1 class="title">
+                    O sabor que vai até <span>você.</span>
+                </h1>
+                <p class="descricao">
+                    Venha experimentar uma viagem gastronômica única, onde cada prato é preparado com ingredientes frescos e de alta qualidade.
+                </p>
+                <div class="cta_buttons">
+                    <a href="" class="btn-default">Ver Cardápio</a>
+                    <a href="" id="phone-button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </button>
+                        (67)87999-9877
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/enildadarosa/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/enildacaceres/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="imagem/pngwing.com (2).png" alt="">
+            </div>
+        </section>
+    </main>
+    <section class="cardapio">
+        <h2 class="section-title">
+            Cardápio
+        </h2>
+        <h3 class="section-subtitle">
+            Nossos pratos especiais.
+        </h3>
+        <div class="area-cards">
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (1).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (2).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (3).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (4).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (2).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imagem/pngwing.com (1).png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    X-FACUL
+                </h3>
+                <span class="card-descricao">
+                    O X-FACUL é um lanche audacioso e irresistível, feito para quem busca uma explosão de sabores.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(1000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$40,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos" id="depoimentos">
+        <img src="imagem/pngwing.com (6) (1).png" alt="" class="image-chefe">
+        <div class="depomentos-content">
+            <h2 class="section-title">
+                Depoimentos
+            </h2>
+            <h3 class="section-subtitle">
+                O que os cliente falam sobre nós.
+            </h3>
+            <div class="area-feedbacks">
+                <div class="feedback">
+                    <img src="imagem/pngwing.com (9) (1).png" alt="" class="image-avatar">
+                    <div class="feedback-content">
+                        <p>
+                            Carolina Maria
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            O X-FACUL é um lanche robusto, com amburguer delicioso, com molho suculento e muitos sabores. Super recomendo.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="imagem/pngwing.com (8) (1).png" alt="" class="image-avatar">
+                    <div class="feedback-content">
+                        <p>
+                            Maria Joaquina
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            O X-FACUL é um lanche robusto, com amburguer delicioso, com molho suculento e muitos sabores. Super recomendo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-default btn-ver">
+                Ver Mais Avaliações.
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-itens">
+            <span class="copyright">
+                &copy 2026 Dogão Da Tia 
+            </span>
+            <div class="social-media-buttons">
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/enildadarosa/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/enildacaceres/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
