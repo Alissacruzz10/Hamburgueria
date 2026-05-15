@@ -1,4 +1,4 @@
-.cardapio{
+.cardapio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,8 @@
     min-height: 100vh;
     padding: 5%;
 }
-.area-cards{
+
+.area-cards {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -14,7 +15,8 @@
     gap: 24px;
     margin-top: 32px;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +29,8 @@
     position: relative;
     overflow: hidden;
 }
-.card-heart{
+
+.card-heart {
     position: absolute;
     background-color: var(--color-primary-6);
     display: flex;
@@ -41,43 +44,50 @@
     right: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
 }
-.card-imagem{
+
+.card-imagem {
     width: 250px;
     height: 190px;
     margin-top: 5%;
     object-fit: cover;
 }
-.card-title{
+
+.card-title {
     font-size: 1.5rem;
     color: var(--color-primary-6);
     padding: 5px;
     text-align: center;
 }
-.card-descricao{
+
+.card-descricao {
     color: var(--color-neutra-1);
     text-align: center;
 }
-.card-rate i{
+
+.card-rate i {
     color: var(--color-primary-6);
 }
-.card-price{
+
+.card-price {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-@media screen and (max-width:600px) {
-    .cardapio{
-        /* background-color: blue ; */
+
+@media screen and (max-width: 600px) {
+    .cardapio {
         width: 100%;
     }
-    .section-subtitle{
-    font-size: 0.8rem;
-    
-}
-.card{
-    width: 250px;
-}
-.card-imagem{
-    width: 200px;
-}
+
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .card-imagem {
+        width: 200px;
+    }
 }

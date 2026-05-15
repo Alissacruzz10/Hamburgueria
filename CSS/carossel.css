@@ -1,0 +1,30 @@
+.area-carrosel {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(248, 236, 211);
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: carrosel 15s linear infinite;
+}
+
+.track img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin: 10px;
+}
+
+@keyframes carrosel {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

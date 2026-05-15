@@ -1,10 +1,11 @@
-.home{
+.home {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
     background-color: var(--color-primary-1);
 }
-.cta{
+
+.cta {
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -12,27 +13,33 @@
     margin-top: 5%;
     margin-left: 5%;
 }
-.title{
+
+.title {
     font-size: 4rem;
     color: var(--color-neutra-1);
 }
-.title span{
+
+.title span {
     color: var(--color-primary-6);
 }
-.descricao{
+
+.descricao {
     width: 90%;
     padding: 10px;
     font-size: 1.2rem;
 }
-.cta_buttons{
+
+.cta_buttons {
     display: flex;
     gap: 24px;
 }
-.cta_buttons a{
+
+.cta_buttons a {
     text-decoration: none;
     color: var(--color-neutra-1);
 }
-#phone-button{
+
+#phone-button {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -42,14 +49,17 @@
     border-radius: 12px;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
 }
-#phone-button button{
+
+#phone-button button {
     box-shadow: none;
 }
-.social-media-buttons{
+
+.social-media-buttons {
     display: flex;
     gap: 18px;
 }
-.social-media-buttons a{
+
+.social-media-buttons a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,38 +73,43 @@
     color: var(--color-neutra-1);
     transition: box-shadow 0.3s ease;
 }
-.social-media-buttons a:hover{
+
+.social-media-buttons a:hover {
     box-shadow: 0px 0px 12px 4px #f8d477be;
 }
-.banner{
+
+.banner {
     display: flex;
     margin: auto;
 }
 
-@media screen and (max-width:600px) {
-    .banner{
-        display: none;
-    }
-    .cta{
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        /* background-color: red; */
-    }
-  
-    .title{
-        font-size: 2rem;
-    }
-    .descricao{
-        font-size: 1rem;
-        padding: 10px;
-    }
-    .cta_buttons{
-        flex-direction: column;
-    }
-}
 .banner img {
     max-width: 480px;
     width: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+
+    .cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .descricao {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .cta_buttons {
+        flex-direction: column;
+    }
 }

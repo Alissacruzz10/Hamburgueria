@@ -1,94 +1,84 @@
 .depoimentos {
     display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 50px 8%;
-    background-color: var(--color-primary-2);
-    flex-wrap: wrap;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: var(--color-primary-1);
+    padding: 5% 5% 0 5%;
+    gap: 40px;
 }
 
-.imagem-chefe {
-    width: 320px;
-    max-width: 35%;
+.image-chefe {
+    max-height: 450px;
+    width: auto;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
-.depoimentos-content {
+.depomentos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 5%;
     flex: 1;
-    min-width: 280px;
-}
-
-.depoimentos-subtitulo {
-    font-size: 1rem;
-    color: var(--color-neutra-1);
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .area-feedbacks {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
+    gap: 20px;
 }
 
 .feedback {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 14px;
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--color-neutra-2);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-avatar {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: solid 2px var(--color-primary-6);
     flex-shrink: 0;
 }
 
-.feedback-texto {
+.feedback-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
 }
 
-.feedback-texto strong {
-    font-size: 0.95rem;
-    color: var(--color-neutra-1);
-}
-
-.feedback-texto p {
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.4;
-}
-
-.estrelas {
+.feedback-content p:first-child {
+    font-weight: 600;
     display: flex;
-    gap: 2px;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback-content span i {
     color: var(--color-primary-6);
     font-size: 0.85rem;
 }
 
-@media screen and (max-width: 768px) {
+.btn-ver {
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 870px) {
     .depoimentos {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
-    .imagem-chefe {
-        width: 200px;
-        max-width: 60%;
+
+    .image-chefe {
+        max-height: 300px;
     }
-    .feedback {
-        flex-direction: column;
-        text-align: center;
-    }
-    .estrelas {
-        justify-content: center;
+
+    .btn-ver {
+        align-self: center;
     }
 }

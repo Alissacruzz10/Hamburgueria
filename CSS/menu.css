@@ -1,4 +1,4 @@
-header{
+header {
     width: 100%;
     background-color: var(--color-primary-2);
     padding: 28px 8%;
@@ -6,51 +6,62 @@ header{
     position: sticky;
     z-index: 3;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#nav-logo{
+
+#nav-logo {
     font-size: 24px;
     color: var(--color-primary-6);
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     gap: 48px;
 }
-.nav-item a{
+
+.nav-item a {
     color: var(--color-neutra-1);
     font-weight: 600;
 }
-.mobile-btn, .mobile-menu{
+
+.mobile-btn,
+.mobile-menu {
     display: none;
 }
 
-@media screen and (max-width: 870px){
-    .nav-list, .navbar{
+@media screen and (max-width: 870px) {
+    .nav-list,
+    .navbar {
         display: none;
     }
-    .mobile-btn{
+
+    .mobile-btn {
         display: block;
         border: none;
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
     }
-    .mobile-menu.active{
+
+    .mobile-menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .mobile-nav-list{
+
+    .mobile-nav-list {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin: 12px 2px;
     }
-    .mobile-nav-list .nav-item{
+
+    .mobile-nav-list .nav-item {
         text-align: center;
     }
 }
