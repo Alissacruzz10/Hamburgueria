@@ -1,6 +1,11 @@
-$(document).ready(function(){
-    $('.mobile-btn').on('click',function(){
-        $('.mobile-menu').toggleClass('active');
-        $(this).find('i').toggleClass('fa-bars fa-x');
-    })
-})
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileBtn = document.querySelector('.mobile-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        const icon = this.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-x');
+    });
+});
